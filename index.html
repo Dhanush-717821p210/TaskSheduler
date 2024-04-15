@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="top">
+    <h2>Task Sheduler</h2>
+    <hr>
+    <div class="first">
+    <div id="stopwatch">00:00:00</div>
+    <button id="startstop" onclick="startstop()">Start</button>
+    <button id="Reset" onclick="Reset()">Reset</button>
+    <br>
+    <hr>
+    Add a Task
+    <br>
+    <input type="text" placeholder="Task" id="Task">
+    <input type="text" placeholder="Description" id="Description">
+    <input type="number" placeholder="Duration" id="Duration">
+    <br>
+    <button id="btn1" onclick="Add()">Add</button>
+    <br>
+    <br>
+    Filter
+    <br>
+    <select name="catagory" id="selid" onchange="selectvalue()">
+        <option  value="None">None</option>
+        <option  value="Personal">Personal</option>
+        <option  value="Office">Office</option>
+    </select>
+    <br>
+    </div>
+    </div><br>
+    <table id="myTable"></table>
+    <script src="index.js"></script>
+</body>
+</html>
+
